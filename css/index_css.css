@@ -1,0 +1,65 @@
+.frame1 {
+    height: 50vh;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../static/bg1.png');
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
+.frame2{
+    height: 50vh;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../static/bg2.png');
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
+
+.Bandeau{
+    white-space: nowrap;
+    overflow:hidden;
+    color:blanchedalmond;
+    background-color: hsl(0,0%, 34%);
+    animation: scrollText 15s linear infinite, breathing-color--dark 1s infinite alternate ease-out;
+}
+@keyframes scrollText {
+    from {
+        transform: translateX(100%); /* Start scrolling from the right edge */
+    }
+    to {
+        transform: translateX(-100%); /* Scroll to the left edge */
+    }
+}
+
+@keyframes breathing-color--dark {
+    from
+    {
+        background-color: rgb(34, 34, 34);
+    }
+    to
+    {
+        background-color: hsl(0, 0%, 34%);
+    }
+}
+
+.about{
+    color:whitesmoke;
+}
+
+.btn-default{
+    color:black;
+}
+
+.imageText{
+    background-color:rgb(34, 34, 34);
+    color:blanchedalmond;  
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
+
+.text-container1{
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
