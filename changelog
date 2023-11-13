@@ -13,5 +13,10 @@ v 1.0.5 - - - - - - -  - - - - - -  - - -
    
   - Trying to add animated diagrams on index.html
   
+v 1.1.0 - - - - - - -  - - - - - -  - - -
+  Third commit
+  * Reworked index.html to use Bootstrap cards 
+    -> Improves readability on both mobile and computer
+
   
 
