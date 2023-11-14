@@ -1,3 +1,24 @@
+p{
+    font-family: sans-serif;
+    font-size:  16px;
+}
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px
+}
+
+@media screen and (min-width:428px){
+    p{
+        font-size:19px
+    }
+    h5{
+        font-size:22px
+    }
+}
+
+
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -21,14 +42,25 @@ h1, h2, p {
     margin-bottom: 15px;
 }
 
-img {
-    max-width: 415px;
-    height: auto;
-}
 
 @media only screen and (min-width: 600px) {
     section {
         max-width: 600px;
         margin: auto;
     }
+}
+
+.card{
+    margin-bottom: 5%
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-custom {
+    background-color: #f8f9fa; /* Set your desired background color */
 }

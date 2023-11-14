@@ -1,43 +1,69 @@
 
+.Bandeau{
+    display:none
+}
+
+p{
+    font-family: sans-serif;
+    font-size:  16px;
+}
+
+h5{
+    font-family: sans-serif;
+    font-size: 19px
+}
+
+/* Dans le cas ou l'écran de l'utilisateur a une largeur supérieure à 429px (écran plus grand que iPhone 13) */
+@media screen and (min-width:429px){ 
+    p{
+        font-size:19px
+    }
+    h5{
+        font-size:22px
+    }
+    .Bandeau{
+        white-space: nowrap;
+        overflow:hidden;
+        color:blanchedalmond;
+        background-color: hsl(0,0%, 34%);
+        animation: scrollText 15s linear infinite, breathing-color--dark 1s infinite alternate ease-out;
+        display: block;
+    }
+    @keyframes scrollText {
+        from {
+            transform: translateX(100%); 
+        }
+        to {
+            transform: translateX(-100%); 
+        }
+    }
+    
+    @keyframes breathing-color--dark {
+        from
+        {
+            background-color: rgb(34, 34, 34);
+        }
+        to
+        {
+            background-color: hsl(0, 0%, 34%);
+        }
+    }
+}
+
+
+
 body{
     background-color: #f0f0f0
 }
 .navbar-custom{
     background-color: #f0f0f0;
 }
-
-.Bandeau{
-    white-space: nowrap;
-    overflow:hidden;
-    color:blanchedalmond;
-    background-color: hsl(0,0%, 34%);
-    animation: scrollText 15s linear infinite, breathing-color--dark 1s infinite alternate ease-out;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-@keyframes scrollText {
-    from {
-        transform: translateX(100%); /* Start scrolling from the right edge */
-    }
-    to {
-        transform: translateX(-100%); /* Scroll to the left edge */
-    }
+.navbar-custom {
+    background-color: #f8f9fa; /* Set your desired background color */
 }
-
-@keyframes breathing-color--dark {
-    from
-    {
-        background-color: rgb(34, 34, 34);
-    }
-    to
-    {
-        background-color: hsl(0, 0%, 34%);
-    }
-}
-
-.about{
-    color:whitesmoke;
-}
-
-.btn-default{
-    color:black;
-}
-
