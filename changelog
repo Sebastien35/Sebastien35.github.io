@@ -24,3 +24,9 @@ v 1.1.5 - - - - - - -  - - - - - -  - - -
   * Added media queries in both css files, changing font size and making 'bandeau' appear or disappear depending on screen size.
   * Change font 
   * Clean code
+
+v 1.1.6
+
+  * Removed call for deprecated script in about.html
+  * added margin-bottom for navbar in about_css.css
+  

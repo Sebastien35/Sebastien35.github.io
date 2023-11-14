@@ -38,9 +38,7 @@ section {
     padding: 20px;
 }
 
-h1, h2, p {
-    margin-bottom: 15px;
-}
+
 
 
 @media only screen and (min-width: 600px) {
@@ -51,7 +49,9 @@ h1, h2, p {
 }
 
 .card{
-    margin-bottom: 5%
+    margin-bottom: 5%;
+    margin-top:10%;
+
 }
 
 
@@ -62,5 +62,6 @@ h1, h2, p {
     z-index: 1000;
 }
 .navbar-custom {
-    background-color: #f8f9fa; /* Set your desired background color */
+    background-color: #f8f9fa;
+    margin-bottom: 5%;
 }

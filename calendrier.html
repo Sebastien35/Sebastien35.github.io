@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ÉcoGuardiens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index_css.css">
+    <link rel="icon" href="static/favico.ico"/>
+
+</head> 
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="btn btn-outline-dark" href="index.html">ÉcoGuardiens</a>
+        <a class="btn btn-outline-dark" href="about.html"> About</a>
+        <a class="btn btn-outline-dark" href="https://www.paypal.com/fr/home"> Donate</a>
+    </nav>
+
+ 
+    <div class="container">
+        <h2 class="mt-4 mb-4">Calendrier ÉcoGuardiens</h2>
+
+        <!-- Menu déroulant pour sélectionner le mois -->
+        <div class="form-group mb-4">
+            <label for="selectMonth">Sélectionnez un mois :</label>
+            <select class="form-control" id="selectMonth" onchange="filterByMonth(this.value)">
+                <option value="all">Tous les mois</option>
+                <option value="janvier">Janvier</option>
+                <option value="fevrier">Février</option>
+                <option value="mars">Mars</option>
+                <option value="avril">Avril</option>
+                <option value="mai">Mai</option>
+                <option value="juin">Juin</option>
+                <option value="juillet">Juillet</option>
+                <option value="aout">Août</option>
+                <option value="septembre">Septembre</option>
+                <option value="octobre">Octobre</option>
+                <option value="novembre">Novembre</option>
+                <option value="decembre">Décembre</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+
+                <!-- Événement 1 -->
+                <div class="event janvier">
+                    <h5 class="card-title">Marche pour la Faune Sauvage</h5>
+                    <p class="card-text">Date : 15 avril 2024</p>
+                    <p class="card-text">Lieu : Parc de la Tête d'Or, Lyon</p>
+                    <p class="card-text">Rejoignez-nous pour une marche solidaire en faveur de la faune sauvage. Tous les fonds récoltés seront dédiés aux projets de préservation des habitats naturels.</p>
+                </div>
+
+                <!-- Événement 2 -->
+                <div class="event mai">
+                    <h5 class="card-title">Conférence sur la Conservation Marine</h5>
+                    <p class="card-text">Date : 25 mai 2024</p>
+                    <p class="card-text">Lieu : Musée Océanographique, Monaco</p>
+                    <p class="card-text">Des experts renommés partageront leurs connaissances sur la conservation marine. Les fonds récoltés contribueront à la protection des espèces marines en voie de disparition.</p>
+                </div>
+
+                <!-- Événement 3 -->
+                <div class="event juin">
+                    <h5 class="card-title">Cinéma sous les Étoiles - Nuit des Documentaires Animaliers</h5>
+                    <p class="card-text">Date : 10 juin 2024</p>
+                    <p class="card-text">Lieu : Place des Vosges, Paris</p>
+                    <p class="card-text">Profitez d'une soirée cinéma en plein air avec des documentaires captivants sur la vie sauvage. Les recettes de la vente de billets iront à la lutte contre le braconnage.</p>
+                </div>
+
+                <!-- Événement 4 -->
+                <div class="event juillet">
+                    <h5 class="card-title">Atelier de Sensibilisation dans les Écoles</h5>
+                    <p class="card-text">Date : Juillet 2024</p>
+                    <p class="card-text">Lieu : Écoles primaires à travers la France</p>
+                    <p class="card-text">Des membres d'ÉcoGuardiens animeront des ateliers interactifs pour sensibiliser les jeunes à l'importance de la protection des animaux et de leurs habitats.</p>
+                </div>
+
+                <!-- Événement 5 -->
+                <div class="event septembre">
+                    <h5 class="card-title">Course de charité "Run for the Wild"</h5>
+                    <p class="card-text">Date : 12 septembre 2024</p>
+                    <p class="card-text">Lieu : Bois de Boulogne, Paris</p>
+                    <p class="card-text">Courez pour la vie sauvage ! Les fonds collectés soutiendront les programmes de réhabilitation des animaux blessés et la sensibilisation à la conservation.</p>
+                </div>
+
+                <!-- Événement 6 -->
+                <div class="event novembre">
+                    <h5 class="card-title">Festival ÉcoNature</h5>
+                    <p class="card-text">Date : 8-10 novembre 2024</p>
+                    <p class="card-text">Lieu : Parc des Expositions, Marseille</p>
+                    <p class="card-text">Un festival dédié à la nature avec des conférences, des expositions artistiques, des stands éducatifs et des activités pour toute la famille. Les recettes seront investies dans des projets de préservation.</p>
+                </div>
+
+                <!-- Événement 7 -->
+                <div class="event decembre">
+                    <h5 class="card-title">Semaine de Sensibilisation aux Animaux Domestiques</h5>
+                    <p class="card-text">Date : 5-11 décembre 2024</p>
+                    <p class="card-text">Lieu : Centres communautaires à travers la France</p>
+                    <p class="card-text">ÉcoGuardiens organisera des sessions éducatives sur les soins responsables des animaux domestiques, mettant en lumière l'importance de l'adoption et du bien-être animal.</p>
+                </div>
+
+                <div id="noEventsMessage" class="alert alert-info mt-4" style="display: none;">
+                    Aucun événement n'est prévu pour le mois sélectionné. Consultez régulièrement notre site et suivez-nous sur les réseaux sociaux pour rester informé des prochains événements.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function filterByMonth(selectedMonth) {
+            $('.event').hide();
+            if (selectedMonth === 'all') {
+                $('.event').show();
+            } else {
+                var eventsToShow = $('.' + selectedMonth);
+                eventsToShow.show();
+
+                // Afficher le message si aucun événement n'est trouvé
+                if (eventsToShow.length === 0) {
+                    $('#noEventsMessage').show();
+                } else {
+                    $('#noEventsMessage').hide();
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
