@@ -17,11 +17,20 @@
         <a class="btn btn-outline-dark" href="about.html"> About</a>
         <a class="btn btn-outline-dark" href="https://www.paypal.com/fr/home"> Donate</a>
     </nav>
+    <div class="Bandeau">La collecte de fond pour sauver le rat d'Opéra a débuté !</div>
 
     <div class="container md">
       <div class="column">
+
         <div class="card">
-          <img src="static/bg1.png" class="card-img-top">
+          <img src="static/ai_meeting.png" class="card-img-top">
+          <div class="card-body">
+            <h5> Le calendrier des évènements 2024 est disponible ! </h5>
+            <p class=card-text> Après la réunion du 13/11/2023, le conseil d'administration a rendu public le calendrier des évènements de 2024.  <a href="calendrier.html">Lien calendrier</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="static/bg4.png" class="card-img-top">
           <div class="card-body">
               <H5> Wapiti des Alpes</H5>
               <p class="card-text">Grâce à une généreuse collecte de dons, notre association a sauvé le wapiti des Alpes de l'extinction. Chaque contribution a été cruciale pour préserver cette espèce emblématique. Merci à tous les défenseurs de la nature qui ont rendu cela possible !</p>
@@ -37,6 +46,24 @@
       </div>
     </div>
    
+
+    <script>
+      window.onscroll = function () {
+          myFunction();
+      };
+  
+      var navbar = document.querySelector(".navbar");
+      var sticky = navbar.offsetTop;
+  
+      function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky");
+          } else {
+              navbar.classList.remove("sticky");
+          }
+      }
+  </script>
+     
 </body>
 
 </html>

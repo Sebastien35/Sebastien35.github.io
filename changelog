@@ -1,22 +1,26 @@
 About:
 Uses http-server. Start local server using "npm start" in terminal. 
 db.json is empty and unused for now.
+All pictures and diagrams are AI generated.
 
 
 v 1.0 - - - - - - -  - - - - - -  - - -
   Initial commit
 
 v 1.0.5 - - - - - - -  - - - - - -  - - -
-  Second commit
+  
   * Added diagrams on "about.html"
   * Channged "about_css.css" styling for navbar buttons
    
   - Trying to add animated diagrams on index.html
   
 v 1.1.0 - - - - - - -  - - - - - -  - - -
-  Third commit
+ 
   * Reworked index.html to use Bootstrap cards 
     -> Improves readability on both mobile and computer
 
-  
+v 1.1.5 - - - - - - -  - - - - - -  - - -
 
+  * Added media queries in both css files, changing font size and making 'bandeau' appear or disappear depending on screen size.
+  * Change font 
+  * Clean code
