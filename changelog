@@ -25,8 +25,11 @@ v 1.1.5 - - - - - - -  - - - - - -  - - -
   * Change font 
   * Clean code
 
-v 1.1.6
+v 1.1.6 - - - - - - -  - - - - - -  - - -
 
   * Removed call for deprecated script in about.html
   * added margin-bottom for navbar in about_css.css
   
+v 1.1.7 - - - - - - -  - - - - - -  - - -
+  
+  * SEO improvement
