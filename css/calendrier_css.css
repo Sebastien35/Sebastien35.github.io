@@ -1,0 +1,37 @@
+.container2{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr,1fr,1fr;
+    gap:20px;
+    background-color: white;
+}
+
+@media (max-width:762px){
+    .container2{
+        grid-template-columns: 1fr;
+    }
+}
+
+.event{
+    border:solid black;
+    border-radius:5px;
+}
+.event:hover{
+    font-size:0px
+}
+
+body{
+    background-color: #f0f0f0
+}
+.navbar-custom{
+    background-color: #f0f0f0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-custom {
+    background-color: #f8f9fa; /* Set your desired background color */
+}

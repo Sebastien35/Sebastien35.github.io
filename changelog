@@ -33,3 +33,10 @@ v 1.1.6 - - - - - - -  - - - - - -  - - -
 v 1.1.7 - - - - - - -  - - - - - -  - - -
   
   * SEO improvement
+
+
+v 1.1.8 - - - - - - -  - - - - - -  - - -
+
+  * CSS modifications on calendrier_css.css
+    - Use display:grid instead of cards
+      - Media queries take care of grid-template-columns depending on device screen size.
