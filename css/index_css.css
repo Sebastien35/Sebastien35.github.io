@@ -53,10 +53,16 @@ h5{
 
 
 body{
-    background-color: #f0f0f0
+    background-image:url("../static/3_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
 }
 .navbar-custom{
     background-color: #f0f0f0;
+   
+    
 }
 .sticky {
     position: fixed;

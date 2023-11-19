@@ -3,7 +3,7 @@
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows: 1fr,1fr,1fr;
     gap:20px;
-    background-color: white;
+    
 }
 
 @media (max-width:762px){
@@ -15,16 +15,23 @@
 .event{
     border:solid black;
     border-radius:5px;
+    background-color: white;
+    cursor: pointer;
 }
 .event:hover{
-    font-size:0px
+    
+    transform: scale(1.05) translateY(-5%);
 }
 
 body{
-    background-color: #f0f0f0
+    background-color: #f0f0f0;
+    background-image: url("../static/4_bg.png");
 }
 .navbar-custom{
     background-color: #f0f0f0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .sticky {
     position: fixed;
@@ -32,6 +39,4 @@ body{
     width: 100%;
     z-index: 1000;
 }
-.navbar-custom {
-    background-color: #f8f9fa; /* Set your desired background color */
-}
+

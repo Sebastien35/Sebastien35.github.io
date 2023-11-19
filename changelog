@@ -40,3 +40,7 @@ v 1.1.8 - - - - - - -  - - - - - -  - - -
   * CSS modifications on calendrier_css.css
     - Use display:grid instead of cards
       - Media queries take care of grid-template-columns depending on device screen size.
+
+v 1.1.9  - - - - - - -  - - - - - -  - - -
+
+  * Added background images
