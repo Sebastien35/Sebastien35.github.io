@@ -44,3 +44,6 @@ v 1.1.8 - - - - - - -  - - - - - -  - - -
 v 1.1.9  - - - - - - -  - - - - - -  - - -
 
   * Added background images
+
+1.1.9_h1
+  * Hotfix_1: Using WebP image to optimize performance.
